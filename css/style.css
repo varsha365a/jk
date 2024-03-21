@@ -1,0 +1,111 @@
+        :root{
+            --blue:#08D9D6;
+            --dark:#252A34;
+            --pink:#FF2E63;
+            --white:#EAEAEA;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 5px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        navbar {
+            background-color: var(--dark);
+            padding: 10px 0;
+            text-align: center;
+        }
+        navbar a {
+            color: #979797;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        navbar a:hover {
+            text-decoration:none;
+            color: white;
+        }
+        .button {
+            border-radius: 4px;
+            background-color: var(--pink);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+          
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+          
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+        .button:hover span {
+            padding-right: 25px;
+        }
+          
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .social-media-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
