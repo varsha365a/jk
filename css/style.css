@@ -139,7 +139,7 @@
             background-color: var(--dark) !important;
         }
 
-        .pricer {
+        * {
             box-sizing: border-box;
           }
           
@@ -194,3 +194,10 @@
               width: 100%;
             }
           }
+
+          #news{
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+          }
+          
