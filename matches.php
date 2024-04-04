@@ -1,45 +1,28 @@
 <html>
 
 <head>
+    <title>Football India - Contact</title>
+
+    <!-- meta data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football India</title>
+    <!-- css file link -->
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/script.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <!-- bootstrap link -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <script src="js/bootstrap.min.js"></script>
+    <!-- Tabs and Pills For Matches links and script -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Tabs and Pills For Matches links and script-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar ">
-            <div class="container">
 
-                <a id=link href="index.html">HOME</a>
-                <a id=link href="plans.html">PLANS</a>
-                <img src="imgs/logo.jpg" alt="logo" height="100" id="logo">
-                <a id=link href="matches.html">MATCHES</a>
-                <a id=link href="news.html">NEWS</a>
-                <a id=link href="contact.html">CONTACT</a>
-
-            </div>
-        </nav>
-    </header>
+    <?php 
+    include "header.php";
+    ?>
    
     <!-- Matches tab start -->
     <div class="container"><br>
@@ -497,7 +480,12 @@
 
         </div>
     </div>
-<!-- Matches tab end -->
+    <!-- Matches tab end -->
+
+<?php
+    include "footer.php";
+
+?>
 
 </body>
 

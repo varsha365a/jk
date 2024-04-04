@@ -2,12 +2,13 @@
             --blue: #08D9D6;
             --dark: #252A34;
             --pink: #FF2E63;
-            --white: #EAEAEA;
+            --white: #ffffff;
         }
 
         body {
-            font-family: "Poppins", sans-serif !important;
+            font-family: "Philosopher", sans-serif;
             font-weight: 400;
+            font-size: x-large !important;
             font-style: normal;
             margin: 0;
             padding: 0;
@@ -86,7 +87,7 @@
             right: 0;
         }
 
-        section {
+        /* section {
             padding: 40px;
             text-align: center;
         }
@@ -101,7 +102,7 @@
             font-size: 18px;
             line-height: 1.6;
             color: #666;
-        }
+        } */
 
         footer {
             background-color: #333;
@@ -111,6 +112,13 @@
             position: relative;
             bottom: 0px;
             width: 100%;
+        }
+
+        .addr{
+            float: left;
+        }
+        .email{
+            float: right;
         }
 
         .fa {
@@ -131,7 +139,7 @@
  
           }
           .map{
-            padding-left: 370px;
+            padding-left: 600px;
             height: 50%;
           }
 
@@ -151,63 +159,8 @@
             padding: 0%;
 
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .columns {
-            float: left;
-            width: 33.3%;
-            padding: 8px;
-        }
-
-        .price {
-            list-style-type: none;
-            border: 1px solid #eee;
-            margin: 0;
-            padding: 0;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-        }
-
-        .price:hover {
-            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-        }
-
-        .price .header {
-            background-color: #111;
-            color: white;
-            font-size: 25px;
-        }
-
-        .price li {
-            border-bottom: 1px solid #eee;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .price .grey {
-            background-color: #eee;
-            font-size: 20px;
-        }
-
-        .button {
-            background-color: #04AA6D;
-            border: none;
-            color: white;
-            padding: 10px 25px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .columns {
-                width: 100%;
-            }
-        }
-
+        
+            
         #news {
             text-align: center;
             padding-top: 40px;
