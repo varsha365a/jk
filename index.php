@@ -92,7 +92,7 @@ include "header.php";
 
   <section>
     <p>This is a place where you can find information about football teams, players, matches, news, and much more.</p>
-    <a href="plans.php"><button class="button"><span>JOIN US NOW</span></button></a>
+    <a href="contact.php"><button class="button"><span>JOIN US NOW</span></button></a>
   </section>
 
   <?php
