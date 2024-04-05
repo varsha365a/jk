@@ -2,23 +2,33 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <!-- social media icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .col{
+            background:#252A34;
+        }
+    </style>
 </head>
 <body>
     <footer>
-        <div class="footeraddress">
-            <div class="addr">
-                <h6>ADDRESS</h6>
-                <p> 811, Annasalai, Chennai, Tamil Nadu - 600002</p><br>
-            </div>
-            <div class="phone">
-                <h6>CONTACT</h6>
-                <p>9595959595</p><br>
-            </div class="email">
-                <h6>EMAIL</h6>
-                <p>footballindia@gmail.com</p>
+
+        <div>
+            <div class="row">
+                <div class="col">
+                    <h6>ADDRESS</h6>
+                    <p> 811, Annasalai, Chennai, Tamil Nadu - 600002</p><br>
+                </div>
+                <div class="col">
+                    <h6>CONTACT</h6>
+                    <p>9595959595</p><br>
+                </div>
+                <div class="col">
+                    <h6>EMAIL</h6>
+                    <p>footballindia@gmail.com</p>
+                </div>
             </div>
         </div>
+        
         <hr>
         <div class="footersocial">
             <a href="https://facebook.com" class="fa fa-facebook"></a>

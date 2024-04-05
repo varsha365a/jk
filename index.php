@@ -61,8 +61,8 @@ include "header.php";
   <img src="imgs/man.jpg" class="man" width="13%">
   <img src="imgs/fooba.jpeg" width="7%" class="football">
   <img src="imgs/goal.jpg" class="goal" width="7%">
-
-  <section class="fbtext">
+ 
+  <section class="fbtext" style="padding: 60px;">
     <h2>Welcome to Our Football Website!</h2>
     <p>
       Football, the beautiful game, captivates millions around the globe with its blend of skill, strategy, and sheer
@@ -88,12 +88,11 @@ include "header.php";
       In the end, whether you're a player, a fan, or simply an admirer from afar, football's enduring appeal lies in its
       ability to evoke emotion, create memories, and remind us all of the power of the beautiful game.
     </p>
+  
+    <p>This is a place where you can find information about football teams, players, matches, news, and much more.</p>
+    <a href="contact.php"><center><button class="button"><span>JOIN US NOW</span></button><center></a>
   </section>
 
-  <section>
-    <p>This is a place where you can find information about football teams, players, matches, news, and much more.</p>
-    <a href="contact.php"><button class="button"><span>JOIN US NOW</span></button></a>
-  </section>
 
   <?php
   include "footer.php";
