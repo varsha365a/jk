@@ -25,7 +25,7 @@
 <?php 
 include "header.php";
 ?>
-
+  <!-- Carousel gallery -->
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -58,10 +58,12 @@ include "header.php";
     </button>
   </div><br>
 
+  <!-- Images for animation -->
   <img src="imgs/man.jpg" class="man" width="13%">
   <img src="imgs/fooba.jpeg" width="7%" class="football">
   <img src="imgs/goal.jpg" class="goal" width="7%">
- 
+
+   <!-- Football text -->
   <section class="fbtext" style="padding: 60px;">
     <h2>Welcome to Our Football Website!</h2>
     <p>
@@ -93,7 +95,7 @@ include "header.php";
     <a href="contact.php"><center><button class="button"><span>JOIN US NOW</span></button><center></a>
   </section>
 
-
+  <!-- Footer link through PHP -->
   <?php
   include "footer.php";
   ?>

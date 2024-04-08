@@ -4,8 +4,10 @@
     <!-- social media icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .col{
-            background:#252A34;
+        .footer{
+            background:#252a34 !important;
+            padding-top: 90px;
+            padding-bottom: 50px;
         }
     </style>
 </head>
@@ -14,15 +16,15 @@
 
         <div>
             <div class="row">
-                <div class="col">
+                <div class="col footer">
                     <h6>ADDRESS</h6>
                     <p> 811, Annasalai, Chennai, Tamil Nadu - 600002</p><br>
                 </div>
-                <div class="col">
+                <div class="col footer">
                     <h6>CONTACT</h6>
                     <p>9595959595</p><br>
                 </div>
-                <div class="col">
+                <div class="col footer">
                     <h6>EMAIL</h6>
                     <p>footballindia@gmail.com</p>
                 </div>

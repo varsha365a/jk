@@ -3,7 +3,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar ">
+  <!-- Navbar for header -->
+  <nav class="navbar ">
     <div class="container">
 
       <a id=link href="index.php">HOME</a>

@@ -17,6 +17,12 @@
 
     <!-- css file link -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Philosopher font library-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,102 +34,63 @@
     <!-- Matches tab start -->
     <div class="container"><br>
         <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#menu1" id="tabnav">March 30</a></li>
-            <li><a data-toggle="tab" href="#menu2" id="tabnav">March 31</a></li>
-            <li><a data-toggle="tab" href="#menu3" id="tabnav">April 1</a></li>
-            <li><a data-toggle="tab" href="#menu4" id="tabnav">April 2</a></li>
+            <li><a data-toggle="tab" href="#menu1" id="tabnav">April 4</a></li>
+            <li><a data-toggle="tab" href="#menu2" id="tabnav">April 5</a></li>
+            <li><a data-toggle="tab" href="#menu3" id="tabnav">April 6</a></li>
+            <li><a data-toggle="tab" href="#menu4" id="tabnav">April 7</a></li>
             <li class="active"><a data-toggle="tab" href="#home" id="tabnav">TODAY</a></li>
-            <li><a data-toggle="tab" href="#menu5" id="tabnav">Apr 4</a></li>
+            <li><a data-toggle="tab" href="#menu5" id="tabnav">Apr 9</a></li>
         </ul>
 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
                 <div class="tables">
-                    <table id="tablematch">
+                <table id="tablematch">
                         <th>
                             ENGLAND CHAMPIONSHIP
                         </th>
                         <tr>
                             <td>
-                                BRENTFORD 
-                            </td>
-                            <td>
-                                1-1
-                            </td>
-                            <td>
-                                MANCHESTER UNITED
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                LIVERPOOL
-                            </td>
-                            <td>
-                                2-1
-                            </td>
-                            <td>
-                                BRIGHTON
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                MANCHESTER CITY
-                            </td>
-                            <td>
-                                0-0
-                            </td>
-                            <td>
-                                ARSENAL
-                            </td>
-                        </tr>
-                        <th>
-                            ITALY - SERIE A
-                        </th>
-                        <tr>
-                            <td>
-                                FLORENTINA
-                            </td>
-                            <td>
-                                1-2
-                            </td>
-                            <td>
-                                AC MILAN
-                            </td>
-                        </tr>
-                        <th>
-                            SPAIN LALIGA
-                        </th>
-                        <tr>
-                            <td>
-                                BARCELONA
+                                BRISTOL CITY
                             </td>
                             <td>
                                 1-0
                             </td>
                             <td>
-                                LAS PALMAS
+                                LEICESTER
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                ATLETICO NATIONAL
+                                MILLWALL
                             </td>
                             <td>
-                                2-0
+                                1-1
                             </td>
                             <td>
-                                CD JAGUARES
+                                WEST BROMWHICH
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                MILLIONARIOS
+                                SOUTHAMPTON
                             </td>
                             <td>
-                                3-1
+                                1-1
                             </td>
                             <td>
-                                SANTA FE
+                                MIDDLESBROW
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HULL
+                            </td>
+                            <td>
+                                0-2
+                            </td>
+                            <td>
+                                STOKE
                             </td>
                         </tr>
                     </table>
@@ -294,69 +261,33 @@
             </div>
             <div id="menu4" class="tab-pane fade">
                 <div class="tables">
-                    <table id="tablematch">
+                <table id="tablematch">
                         <th>
-                            ENGLAND CHAMPIONSHIP
+                            ARGENTINA
                         </th>
                         <tr>
                             <td>
-                                BRENTFORD 
+                                LANUS
                             </td>
                             <td>
-                                1-1
+                                2-2
                             </td>
                             <td>
-                                MANCHESTER UNITED
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                LIVERPOOL
-                            </td>
-                            <td>
-                                2-1
-                            </td>
-                            <td>
-                                BRIGHTON
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                MANCHESTER CITY
-                            </td>
-                            <td>
-                                0-0
-                            </td>
-                            <td>
-                                ARSENAL
+                                UNION
                             </td>
                         </tr>
                         <th>
-                            ITALY - SERIE A
+                            COLUMBIA-PRIMERA A
                         </th>
                         <tr>
                             <td>
-                                FLORENTINA
-                            </td>
-                            <td>
-                                1-2
-                            </td>
-                            <td>
-                                AC MILAN
-                            </td>
-                        </tr>
-                        <th>
-                            SPAIN LALIGA
-                        </th>
-                        <tr>
-                            <td>
-                                BARCELONA
+                                BUCARAMANGA
                             </td>
                             <td>
                                 1-0
                             </td>
                             <td>
-                                LAS PALMAS
+                                RIONEGRO AGUILAS
                             </td>
                         </tr>
                         <tr>
@@ -382,96 +313,56 @@
                             </td>
                         </tr>
                     </table>
-            
                 </div>
             </div>
             <div id="menu5" class="tab-pane fade">
                 <div class="tables">
-                    <table id="tablematch">
+                <table id="tablematch">
                         <th>
                             ENGLAND CHAMPIONSHIP
                         </th>
                         <tr>
                             <td>
-                                BRENTFORD 
+                                NEW CASTLE
                             </td>
                             <td>
-                                1-1
+                                4-3
                             </td>
                             <td>
-                                MANCHESTER UNITED
+                                WESTHAM
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                LIVERPOOL
+                                BOURNEMOUTH 
                             </td>
                             <td>
                                 2-1
                             </td>
                             <td>
-                                BRIGHTON
+                                EVERTON 
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                MANCHESTER CITY
-                            </td>
-                            <td>
-                                0-0
-                            </td>
-                            <td>
-                                ARSENAL
-                            </td>
-                        </tr>
-                        <th>
-                            ITALY - SERIE A
-                        </th>
-                        <tr>
-                            <td>
-                                FLORENTINA
-                            </td>
-                            <td>
-                                1-2
-                            </td>
-                            <td>
-                                AC MILAN
-                            </td>
-                        </tr>
-                        <th>
-                            SPAIN LALIGA
-                        </th>
-                        <tr>
-                            <td>
-                                BARCELONA
-                            </td>
-                            <td>
-                                1-0
-                            </td>
-                            <td>
-                                LAS PALMAS
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                ATLETICO NATIONAL
+                                NOTTINGHAM FOREST
                             </td>
                             <td>
                                 2-0
                             </td>
                             <td>
-                                CD JAGUARES
+                                CRYSTAL PALACE
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                MILLIONARIOS
+                                SHEFFIELD UNITED
                             </td>
                             <td>
                                 3-1
                             </td>
                             <td>
-                                SANTA FE
+                                FULLHAM
                             </td>
                         </tr>
                     </table>

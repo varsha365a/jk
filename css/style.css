@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: "Philosopher", sans-serif;
+    font-family: "Philosopher", sans-serif; 
     font-weight: 400;
-    font-size: x-large !important;
+    font-size: 16px !important; 
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -124,8 +124,12 @@ footer {
 
   }
   .map{
-    padding-left: 600px;
-    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-left: 40px ;
+    padding-bottom:30px;
   }
 
 #logo {
@@ -218,8 +222,7 @@ input[type="submit"]:hover {
 }
 
 #tablematch {
-    /* font-family: arial, sans-serif; */
-    /* border-collapse: collapse; */
+   
     width: 100%;
     border-radius: 3px;
   }
@@ -254,7 +257,7 @@ input[type="submit"]:hover {
     color:var(--dark);
 }
 
-/* Football Animation */
+
 .football{
     position: relative;
     animation-name: football;
@@ -267,7 +270,7 @@ input[type="submit"]:hover {
 
 @keyframes football{
     from{ left : 0px }
-    to{ left : 960px }
+    to{ left : 960px}
 }
 
 .goal{
