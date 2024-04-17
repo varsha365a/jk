@@ -42,6 +42,7 @@
             <li><a data-toggle="tab" href="#menu5" id="tabnav">Apr 9</a></li>
         </ul>
 
+        <!-- Matches information according to date -->
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
                 <div class="tables">

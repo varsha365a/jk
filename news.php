@@ -17,14 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <style>
-      .news{
-        margin:50px;
-        border: solid 6px #C0C0C0;
-        background: #252a34 ;
-        padding-top: 40px;
-      }
-    </style>
 
 </head>
 
@@ -34,7 +26,7 @@
   include "header.php";
   
   ?>
-
+  <!-- Divs for news content -->
   <div class="container text-center">
     <div class="row">
       <div class="col news">

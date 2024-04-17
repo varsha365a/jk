@@ -13,8 +13,7 @@
 </head>
 <body>
     <footer>
-
-        <div>
+        <div class="container">
             <div class="row">
                 <div class="col footer">
                     <h6>ADDRESS</h6>
@@ -32,6 +31,8 @@
         </div>
         
         <hr>
+
+        <!-- Footer social media icons with links -->
         <div class="footersocial">
             <a href="https://facebook.com" class="fa fa-facebook"></a>
             <a href="https://twitter.com" class="fa fa-twitter"></a>

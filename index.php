@@ -22,6 +22,7 @@
 
 <body>
 
+<!-- Header file linked using PHP -->
 <?php 
 include "header.php";
 ?>
@@ -59,9 +60,12 @@ include "header.php";
   </div><br>
 
   <!-- Images for animation -->
-  <img src="imgs/man.jpg" class="man" width="13%">
-  <img src="imgs/fooba.jpeg" width="7%" class="football">
-  <img src="imgs/goal.jpg" class="goal" width="7%">
+  <div class="container">
+  <img src="imgs/man.jpg" class="man" height="100">
+  <img src="imgs/fooba.jpeg" height="100"  class="football">
+  <img src="imgs/goal.jpg" class="goal" height="100">
+  </div>
+  
 
    <!-- Football text -->
   <section class="fbtext" style="padding: 60px;">
@@ -92,7 +96,7 @@ include "header.php";
     </p>
   
     <p>This is a place where you can find information about football teams, players, matches, news, and much more.</p>
-    <a href="contact.php"><center><button class="button"><span>JOIN US NOW</span></button><center></a>
+    <a href="login.php"><button class="button"><span>JOIN US NOW</span></button></a>
   </section>
 
   <!-- Footer link through PHP -->

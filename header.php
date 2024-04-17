@@ -1,9 +1,10 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <!-- Navbar for header -->
+  <!-- Navbar for header  -->
   <nav class="navbar ">
     <div class="container">
 
@@ -12,9 +13,10 @@
       <img src="imgs/logo.jpg" alt="logo" height="100" id="logo">      
       <a id=link href="news.php">NEWS</a>
       <a id=link href="contact.php">CONTACT</a>
-
     </div>
   </nav>
 
+
+  
 </body>
 </html>

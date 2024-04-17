@@ -37,6 +37,7 @@ header h1 {
 
 
 
+
 #link {
     color: #979797;
     text-decoration: none;
@@ -261,18 +262,45 @@ input[type="submit"]:hover {
 .football{
     position: relative;
     animation-name: football;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
     animation-direction: alternate;
-}
+}  
 
+/* Normal screen animation */
 @keyframes football{
     from{ left : 0px }
-    to{ left : 960px}
+    to{ left : 890px }
+}
+
+
+/* Mobile screen animation */
+@media screen and (max-width: 480px){
+    @keyframes football{
+        from{ left : 0px }
+        to{ left : 10px }
+    }
+}
+
+/* Tablet screen animation */
+@media screen and (max-width: 768px){
+    @keyframes football{
+        from{ left : 0px }
+        to{ left : 520px }
+    }
 }
 
 .goal{
     float: right;
 }
+
+  .news{
+    margin:50px;
+    border: solid 6px #C0C0C0;
+    background: #252a34 ;
+    padding-top: 40px;
+  }
+
+  
