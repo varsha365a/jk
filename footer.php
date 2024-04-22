@@ -21,7 +21,10 @@
                 </div>
                 <div class="col footer">
                     <h6>CONTACT</h6>
-                    <p>9595959595</p><br>
+                    <p>9595959595</p>
+                    <p>9559595959</p>
+                    <p>9599694415</p>
+                    <br>
                 </div>
                 <div class="col footer">
                     <h6>EMAIL</h6>

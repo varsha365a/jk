@@ -29,10 +29,11 @@
     <!-- Contact form -->
     <!-- firstname, lastname, email, phone, age, city, state, zip -->
     <div id="contact">
-        <h1>Contact Us</h1>
+        <h1>Register Yourself</h1>
+        <span class="required_fields" style="float:right;">* required field</span> <br>
         <form method='post' action="insert_data.php" class="row g-3">
         <div class="col-md-6">
-            <label for="inputFirstName" class="form-label">First Name</label>
+            <label for="inputFirstName" class="form-label">First Name<span class="required_field"> *</span></label>
             <input type="name" name="firstname" class="form-control" id="inputFirstName" required>
             <?php
                if(isset($_POST['submit']) && trim($_POST['firstname']))
@@ -50,7 +51,7 @@
             ?>
         </div>
         <div class="col-md-6">
-            <label for="inputLastName" class="form-label">Last Name</label>
+            <label for="inputLastName" class="form-label">Last Name<span class="required_field"> *</span></label>
             <input type="name" name="lastname" class="form-control" id="inputLastName" required>
             <?php
                if(isset($_POST['submit'])&& trim($_POST['lastname']))
@@ -67,9 +68,9 @@
                 } 
             ?>
         </div>
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="text" name='email' class="form-control" id="inputEmail4" required>
+        <div class="col-md-12">
+            <label for="inputEmail" class="form-label">Email<span class="required_field"> *</span></label>
+            <input type="text" name='email' class="form-control" id="inputEmail" required>
             <?php
                 if(isset($_POST['submit'])&& trim($_POST['email']))
                 {
@@ -85,10 +86,30 @@
                 }
             ?>
         </div>
+
+        <div class="col-md-12">
+            <label for="password" class="form-label">Password<span class="required_field"> *</span></label>
+            <input type="text" name='password' class="form-control" id="password" required>
+            [Minimum 8 characters, atleast one uppercase letter, lowercase letter, special character and one digit]
+            <?php
+                if(isset($_POST['submit'])&& trim($_POST['password'])!='')
+                {
+                    $password=$_POST['password'];
+                    if(!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>]).{8,}$/ix',$password ))
+                    {
+                        echo "<span style='color:red;'>*Invalid password</span>";
+                    }
+                    else 
+                    {
+                        echo "<span style='color:green;'>*Valid password</span>";
+                    }
+                }
+            ?>
+        </div>
         
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Mobile Number</label>
-            <input type="tel" name="phone" class="form-control" id="inputAddress" minlength="3" maxlength="10" >
+            <label for="inputphone" class="form-label">Mobile Number<span class="required_field"> *</span></label>
+            <input type="tel" name="phone" class="form-control" id="inputphone" minlength="3" maxlength="10" >
             <?php
                 if(isset($_POST['submit'])&& trim($_POST['phone']))
                 {
@@ -111,8 +132,8 @@
                 }
             ?>
         </div>
-        <div class="col-md-2">
-            <label for="inputZip" class="form-label">Age</label>
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Age<span class="required_field"> *</span></label>
             <input type="number" name="age" class="form-control" id="inputZip" required>
             <?php
                 if(isset($_POST['submit'])&& trim($_POST['age']))
@@ -131,7 +152,7 @@
         </div>
         <div class="col-md-6">
             <label for="inputCity" class="form-label">City</label>
-            <input type="text" name="city" class="form-control" id="inputCity" required>
+            <input type="text" name="city" class="form-control" id="inputCity">
             <?php
                 if(isset($_POST['submit'])&& trim($_POST['city']))
                 {
@@ -145,7 +166,7 @@
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
-            <select id="inputState" name="state" class="form-select" required>
+            <select id="inputState" name="state" class="form-select">
             <option selected>Choose...</option>
             <option>Tamil Nadu</option>
             <option>Kerala</option>
@@ -168,11 +189,16 @@
             ?>
         </div>
         <div class="col-12">
-            <button type="submit" name="add_students" class="btn btn-primary">Sign in</button>
+            <button type="submit" name="add_students" class="btn btn-primary">REGISTER</button>
         </div>
         </form>
+        <div></div>
+        <div class="col-12">
+        Already a registered player?
+            <a href="login.php"><button type="submit" name="add_students" class="btn btn-primary">LOGIN</button></a>
+        </div>
         </div>        
-
+        
     <!-- Map url of a random place -->
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7772.99113116181!2d80.26939772114869!3d13.067748564606497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52661c83945e0d%3A0x135ca5f116dbd0f4!2s811%2C%20Anna%20Salai%2C%20Mount%20Road%2C%20Anna%20Salai%2C%20Triplicane%2C%20Chennai%2C%20Tamil%20Nadu%20600002!5e0!3m2!1sen!2sin!4v1712057348279!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

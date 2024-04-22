@@ -6,10 +6,8 @@
 }
 
 body {
-    font-family: "Philosopher", sans-serif; 
-    font-weight: 400;
-    font-size: 16px !important; 
-    font-style: normal;
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 400 !important;
     margin: 0;
     padding: 0;
     background-color: var(--white);
@@ -34,9 +32,6 @@ header h1 {
     background-color: var(--dark) !important;
     /* position: absolute !important; */
 }
-
-
-
 
 #link {
     color: #979797;
@@ -155,6 +150,7 @@ footer {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
+    
 }
 
 .btn-group {
@@ -250,6 +246,11 @@ input[type="submit"]:hover {
     text-decoration: none;
     color: var(--white);
   }
+
+.news{
+    color: var(--white);     
+}
+
 #formsubmit{
     text-align: center;
     padding: 40px;
@@ -303,4 +304,36 @@ input[type="submit"]:hover {
     padding-top: 40px;
   }
 
-  
+.login_h1{
+    text-align: center;
+    letter-spacing: 2px;
+}
+.login{
+    padding: 60px;
+}
+.alert-danger{
+    float: right !important;
+    margin-top: 20px !important;
+    margin-right: 20px !important;
+}
+.alert-success{
+    float: right !important;
+    margin-top: 20px !important;
+    margin-right: 20px !important;
+}
+
+.required_field{
+    color:red;
+}
+.button_redirectform{
+    margin:40px;
+
+}
+
+.mx-auto{
+    margin: 80px !important;
+}
+.player_details{
+    text-align: center;
+    font-size: larger;
+}

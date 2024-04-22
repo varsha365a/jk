@@ -49,7 +49,7 @@
             die("query failed". mysqli_error($connection));
         }
         else{
-            header('location:contact.php?update_msg=You have successfully updated');
+            header('location:login_open.php?update_msg=You have successfully updated your details');
         }
     }
     
