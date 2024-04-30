@@ -19,20 +19,19 @@ if(isset($_POST['login']))
         {                
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            header('location:login_pic.php');
-            
+            header('location:login_open.php');
         }
         else
         {
             //valid reason to display when the username is wrong
             if(!$_POST['email'])
             {
-                header('location:login.php?message="Sorry your email id is incorrect! "');
+                header('location:login2.php?message="Sorry your email id is incorrect! "');
             }
             else
             {
                 //valid reason to display when the password is wrong
-                header('location:login.php?message="Sorry your password is incorrect! "');
+                header('location:login2.php?message="Sorry your password is incorrect! "');
             }
         }
     }   

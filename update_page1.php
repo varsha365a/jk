@@ -21,6 +21,7 @@
             }
             else
             {
+                // Converts result into an associative array
                 $row=mysqli_fetch_assoc($result);   
             }
         }
@@ -28,9 +29,12 @@
     ?>
 
     <?php
+    // checks if the update_people name contains some value.
     if(isset($_POST['update_people']))
     {
-        if(isset($_GET['id_new'])){
+
+        if(isset($_GET['id_new']))
+        {
             $idnew=$_GET['id_new'];
         }
         $firstname=$_POST['firstname'];
@@ -42,6 +46,7 @@
         $state=$_POST['state'];
         $zip=$_POST['zip'];
 
+        // SQL query to update contacts to its respective variable names
         $query="update `contact` set `firstname`='$firstname', 
         `lastname`='$lastname',`email`='$email',`phone`='$phone',`age`='$age',`city`='$city',`state`='$state',`zip`='$zip' where `id` = '$idnew'";
         $result=mysqli_query($connection,$query);
@@ -49,6 +54,7 @@
             die("query failed". mysqli_error($connection));
         }
         else{
+            //alert message to show that the player details have been edited
             header('location:login_open.php?update_msg=You have successfully updated your details');
         }
     }
@@ -57,41 +63,44 @@
 
 
     <div class="container">
+        <!-- Update form -->
         <h1>CONTACT UPDATE FORM</h1>
-    <form action="update_page1.php?id_new=<?php echo $id; ?>" method="post">
-        <div class="form-group">
-        <label>First name</label>
-        <input type="text" name="firstname" class="form-control" value="<?php echo $row['firstname'] ?>">
-        </div>
-        <label>Last name</label>
-        <input type="text" name="lastname" class="form-control" value="<?php echo $row['lastname'] ?>">
-        <div class="form-group">
-        <label>Email</label>
-        <input type="text" name="email" class="form-control" value="<?php echo $row['email'] ?>">
-        </div>
-        <div class="form-group">
-        <label>Phone number</label>
-        <input type="text" name="phone" class="form-control" value="<?php echo $row['phone'] ?>">
-        </div>
-        <div class="form-group">
-        <label>Age</label>
-        <input type="text" name="age" class="form-control" value="<?php echo $row['age'] ?>">
-        </div>
-        <div class="form-group">
-        <label>City</label>
-        <input type="text" name="city" class="form-control" value="<?php echo $row['city'] ?>">
-        </div>
-        <div class="form-group">
-        <label>State</label>
-        <input type="text" name="state" class="form-control" value="<?php echo $row['state'] ?>">
-        </div>
-        <div class="form-group">
-        <label>Zip Code</label>
-        <input type="text" name="zip" class="form-control" value="<?php echo $row['zip'] ?>">
-        </div>
-        <input type="submit" class="btn btn-success" name="update_people" value="UPDATE">
-    </form>
-</div>
-</body>
+        <form action="update_page1.php?id_new=<?php echo $id; ?>" method="post">
+            <div class="form-group">
+            <label>First name</label>
+            <input type="text" name="firstname" class="form-control" value="<?php echo $row['firstname'] ?>">
+            </div>
+            <label>Last name</label>
+            <input type="text" name="lastname" class="form-control" value="<?php echo $row['lastname'] ?>">
+            <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control" value="<?php echo $row['email'] ?>">
+            </div>
+            <div class="form-group">
+            <label>Phone number</label>
+            <input type="text" name="phone" class="form-control" value="<?php echo $row['phone'] ?>">
+            </div>
+            <div class="form-group">
+            <label>Age</label>
+            <input type="text" name="age" class="form-control" value="<?php echo $row['age'] ?>">
+            </div>
+            <div class="form-group">
+            <label>City</label>
+            <input type="text" name="city" class="form-control" value="<?php echo $row['city'] ?>">
+            </div>
+            <div class="form-group">
+            <label>State</label>
+            <input type="text" name="state" class="form-control" value="<?php echo $row['state'] ?>">
+            </div>
+            <div class="form-group">
+            <label>Zip Code</label>
+            <input type="text" name="zip" class="form-control" value="<?php echo $row['zip'] ?>">
+            </div>
+
+            <!-- Submit button -->
+            <input type="submit" class="btn btn-success" name="update_people" value="UPDATE">
+        </form>
+    </div>
+    </body>
 </html>
 

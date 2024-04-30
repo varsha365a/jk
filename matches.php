@@ -34,12 +34,12 @@
     <!-- Matches tab start -->
     <div class="container"><br>
         <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#menu1" id="tabnav">April 4</a></li>
-            <li><a data-toggle="tab" href="#menu2" id="tabnav">April 5</a></li>
-            <li><a data-toggle="tab" href="#menu3" id="tabnav">April 6</a></li>
-            <li><a data-toggle="tab" href="#menu4" id="tabnav">April 7</a></li>
+            <li><a data-toggle="tab" href="#menu1" id="tabnav">April 21</a></li>
+            <li><a data-toggle="tab" href="#menu2" id="tabnav">April 22</a></li>
+            <li><a data-toggle="tab" href="#menu3" id="tabnav">April 23</a></li>
+            <li><a data-toggle="tab" href="#menu4" id="tabnav">April 24</a></li>
             <li class="active"><a data-toggle="tab" href="#home" id="tabnav">TODAY</a></li>
-            <li><a data-toggle="tab" href="#menu5" id="tabnav">Apr 9</a></li>
+            <li><a data-toggle="tab" href="#menu5" id="tabnav">Apr 26</a></li>
         </ul>
 
         <!-- Matches information according to date -->

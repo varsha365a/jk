@@ -13,6 +13,7 @@
 </head>
 <body>
     <footer>
+        <!-- Contains footer details in a div container -->
         <div class="container">
             <div class="row">
                 <div class="col footer">

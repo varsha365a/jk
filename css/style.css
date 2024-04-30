@@ -33,6 +33,10 @@ header h1 {
     /* position: absolute !important; */
 }
 
+.navbar li a:focus {
+    background-color: #EAB126
+  }
+
 #link {
     color: #979797;
     text-decoration: none;
@@ -123,7 +127,8 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
+
     padding-left: 40px ;
     padding-bottom:30px;
   }
@@ -270,28 +275,62 @@ input[type="submit"]:hover {
     animation-direction: alternate;
 }  
 
-/* Normal screen animation */
-@keyframes football{
+/* Small screen animation 320px */
+/* minus 256 for container space */
+
+@media only screen and (max-width: 321px)
+{
+    .football{
+        height:20px;
+    }
+    @keyframes football{
     from{ left : 0px }
-    to{ left : 890px }
+    to{ left : 66px }
+}
 }
 
+/* Tablet screen 768px*/
+@media only screen and (min-width: 321px)
+{
+    .football{
+        height:60px;
+    }
+    @keyframes football{
+    from{ left : 0px }
+    to{ left : 120px }
+}
+}
 
-/* Mobile screen animation */
-@media screen and (max-width: 480px){
+/* Laptop screen animation 1024px */
+@media only screen and (min-width: 768px)
+{
+    .football{
+        height:50px;
+    }
     @keyframes football{
         from{ left : 0px }
-        to{ left : 10px }
+        to{ left : 478px }
     }
 }
 
-/* Tablet screen animation */
-@media screen and (max-width: 768px){
+/* Laptop screen animation 1024px */
+@media only screen and (min-width: 968px)
+{
+    .football{
+        height:50px;
+    }
     @keyframes football{
         from{ left : 0px }
-        to{ left : 520px }
+        to{ left : 648px }
     }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .goal{
     float: right;
@@ -335,5 +374,6 @@ input[type="submit"]:hover {
 }
 .player_details{
     text-align: center;
-    font-size: larger;
+    font-size: large;
+    color: green
 }

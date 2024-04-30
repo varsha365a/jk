@@ -12,17 +12,17 @@
             if(isset($_GET['message']))
             // to display an alert message when a player logs out.
             {
-                echo "<div class='col-lg-4 alert alert-danger' role='alert'>".$_GET['message']."</div>";
+                echo "<div class='col-lg-11 alert alert-danger' role='alert'>".$_GET['message']."</div>";
             } ?>
             <?php 
             if(isset($_GET['login_message']))
             {
-                echo "<div class='col-lg-4 alert alert-danger' role='alert'>".$_GET['login_message']."</div>";
+                echo "<div class='col-lg-11 alert alert-danger' role='alert'>".$_GET['login_message']."</div>";
             } ?>
         <div class="container login text-center col-lg-6">
             <!-- Login page structure using form class of bootstrap -->
             <h1 class="login_h1">LOGIN PAGE</h1>
-            <form class="form text-center" action="login_process.php" method="post">
+            <form class="form text-center" action="login_process2.php" method="post">
                 <div class="col-lg-12">
                     <label for="email">EMAIL</label>
                     <input type="email" name="email" class="form-control">
@@ -41,7 +41,13 @@
                 </div>
             </form>
         </div>
-        
+        <?php
+            // message displayed once a player deletes their record
+            if(isset($_GET['delete_msg']))
+            {
+                echo "<div class='col-lg-11 alert alert-danger' role='alert'>".$_GET['delete_msg']."</div>";
+            }
+        ?>
 
         <script>
             // javascript function to show and hide the password

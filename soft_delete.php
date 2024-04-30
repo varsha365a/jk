@@ -13,15 +13,15 @@ if (isset($_GET['id'])) {
         mysqli_stmt_bind_param($stmt, 'i', $id);
         mysqli_stmt_execute($stmt);
         
-        // Redirect back to index.php with a delete confirmation message
-        header('Location: index2.php?delete_msg=Record has been deleted.');
+        // Redirect back to login.php with a delete confirmation message
+        header('Location:login.php?delete_msg=Record has been deleted.');
         exit;
     } else {
         die("Prepared statement failed: " . mysqli_error($connection));
     }
 } else {
     // Redirect if id parameter is not provided
-    header('Location: index2.php');
+    header('Location:login_open.php');
     exit;
 }
 ?>

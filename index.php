@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Football India - Contact</title>
+    <title>Football India</title>
 
     <!-- meta data -->
     <meta charset="UTF-8">
@@ -95,7 +95,7 @@ include "header.php";
     </p>
   
     <p>This is a place where you can find information about football teams, players, matches, news, and much more.</p>
-    <a href="contact.php"><button class="button"><span>JOIN US NOW</span></button></a>
+    <a href="join_us.php"><button class="button"><span>JOIN US NOW</span></button></a>
   </section>
 
   <!-- Footer link through PHP -->
